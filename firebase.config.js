@@ -3,9 +3,6 @@ import { getStorage } from 'firebase/storage';
 import { getDatabase } from 'firebase/database';
 import Constants from 'expo-constants';
 
-// console.log(Constants.expoConfig.extra.FIREBASE_API_KEY);
-// console.log(Constants.expoConfig.extra.FIREBASE_DATABASE_URL);
-
 
 const firebaseConfig = {
   apiKey: Constants.expoConfig.extra.FIREBASE_API_KEY, 
@@ -20,12 +17,10 @@ const firebaseConfig = {
 
 
 let app;
-// Prevent reinitialization of Firebase in hot reload scenarios
 if (!getApps().length) {
   app = initializeApp(firebaseConfig);
 }
 
-// Initialize Firebase Storage and Database
 const storage = getStorage(app);
 const database = getDatabase(app);
 

@@ -1,4 +1,4 @@
-import "dotenv/config"; // Load .env file
+import "dotenv/config";
 
 export default {
   expo: {
@@ -71,7 +71,7 @@ export default {
         origin: false,
       },
       eas: {
-        projectId: process.env.EAS_PROJECT_ID, // EAS Project ID
+        projectId: process.env.EAS_PROJECT_ID,
       },
     },
   },
