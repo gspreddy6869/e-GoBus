@@ -1,4 +1,4 @@
-# e-GO Bus 🚍
+# e-GO Bus 🚍 
 
 > **A Smart School Bus Tracking Solution for Safe and Efficient Commutes**
 
